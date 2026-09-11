@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(gray, teal);
+    text-align: center;
+
+}
+ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+}
