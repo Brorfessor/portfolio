@@ -1,12 +1,12 @@
-html{
-    background: linear-gradient(gray, teal);
-}
-
 header{
     text-align: center;
 }
 body {
     text-align: left;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(gray, teal);
+    background-attachment: fixed;
 }
 ul {
     list-style-position: inside;
