@@ -1,8 +1,11 @@
+html{
+    background: linear-gradient(gray, teal);
+}
+
 header{
     text-align: center;
 }
 body {
-    background: linear-gradient(gray, teal);
     text-align: left;
 }
 ul {
@@ -10,4 +13,7 @@ ul {
     padding: 0;
     text-align: left;
 
+}
+footer{
+    text-align: center;
 }
