@@ -10,7 +10,12 @@ body {
 h1{
     text-align: center;
 }
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 
+}
 .navbar ul{
     list-style-type: none;
     background-color: hsl(0,0%,25%);
