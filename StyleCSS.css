@@ -10,7 +10,7 @@ body {
 h1{
     text-align: center;
 }
-}
+
 .navbar ul{
     list-style-type: none;
     background-color: hsl(0,0%,25%);
@@ -24,7 +24,7 @@ h1{
     padding: 15px;
     display: flex;
     text-align: center;
-    list-style-type
+
 }
 .navbar a:hover{
     background-color: black;
