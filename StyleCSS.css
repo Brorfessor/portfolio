@@ -42,7 +42,7 @@ h1{
 .navbar ul{
     display: flex;
     flex-direction: column;
-    justify-items: start;
+    justify-content: flex-start;
     list-style-type: none;
     padding: 0;
     margin: -10px;
