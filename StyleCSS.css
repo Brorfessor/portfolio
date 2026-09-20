@@ -1,6 +1,3 @@
-header{
-    text-align: center;
-}
 @font-face {
     font-family: "Montserrat";
     src: url("assets/Fonts/Montserrat/static/montserrat-Regular.ttf");
@@ -8,43 +5,76 @@ header{
 }
 body {
     font-family: "Montserrat", serif;
-    text-align: left;
-    margin: 0;
     min-height: 100vh;
     background: linear-gradient(gray, teal) fixed;
 }
+h1{
+    display:flex;
+    justify-content: flex-start;
+    margin: 15px 15px;
+
+}
+.navbar{
+    position: fixed;
+}
 .navbar ul{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-items: start;
     list-style-type: none;
-    background-color: hsl(0,0%,25%);
     padding: 0;
-    margin: 0;
+    margin: -10px;
     overflow: hidden;
+
 }
 .navbar a{
+    display:flex;
+    gap: 25px;
     color: white;
     text-decoration:none;
+    background-color: hsl(0 0% 25% / 0.38);
+    width: fit-content;
     padding: 20px;
-
-
-
+    transition: 0.7s;
+    opacity: 80%;
+    margin: -5px;
+}
+.long{
+    display: none;
+}
+.navbar a:hover .short{
+    display:none
+}
+.navbar a:hover .long{
+    display: inline;
 }
 .navbar a:hover{
-    background-color: black;
+    background-color: rgb(2 119 119 / 0.81);
+    font-size: large;
+    opacity: 100%;
+    margin: 0;
 }
-.navbar li{
-    float: left;
-}
-.navbar p{
-    display:flex;
-    justify-content: center;
+
+.div2 img{
+    width: 280px;
+    height: 300px;
+    border-radius: 50px;
+    margin: 15px 15px;
 }
 
 main p{
-    box-sizing: border-box;
-}
 
+}
+#Om-Mig{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 400px;
+    margin-left:auto;
+    background: linear-gradient(gray,teal);
+    border-radius: 50px;
+    padding: 15px
+}
 footer{
     display: flex;
     justify-content: flex-end;
@@ -52,7 +82,6 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
 }
 footer a{
     font-size: large;
@@ -61,22 +90,9 @@ footer a{
     transition: 0.5s;
     color: white;
     text-decoration: none;
+    background-color: rgb(0 0 0 / 0.21);
 }
 footer a:hover{
     background-color: black;
-    border-radius: 50px;
-}
-
-.container{
-    display: flex;
-    justify-content: flex-start;
-}
-.box{
-    width: 350px;
-    height: 80px;
-    text-align: center;
-    border-radius: 50px;
-}
-#box1{
-    background-color: rgb(0 255 217 / 0.45);
+    border-radius: 75px;
 }
