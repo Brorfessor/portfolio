@@ -8,6 +8,28 @@ body {
     min-height: 100vh;
     background: linear-gradient(gray, teal) fixed;
 }
+
+#progress{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background: teal;
+    z-index: 9999;
+    animation: growProgress linear;
+    animation-timeline: scroll();
+}
+
+@keyframes growProgress{
+    from{
+        transform: scalex(0);
+
+    }
+    to{
+        transform:scaleX(1);
+    }
+}
 h1{
     display:flex;
     justify-content: flex-start;
@@ -71,7 +93,7 @@ main p{
     flex-direction: column;
     width: 400px;
     margin-left:auto;
-    background: linear-gradient(gray,teal);
+    background: linear-gradient(rgb(128 128 128 / 0.45), rgb(0 128 128 / 0.45));
     border-radius: 50px;
     padding: 15px
 }
