@@ -9,6 +9,32 @@ body {
     background-color: #434343;
 }
 
+.mute-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Keeps it layered above all content */
+    padding: 10px 15px;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.mute-btn:hover {
+    background-color: #444;
+}
+
+.mute-btn.is-muted {
+    background-color: #d9534f; /* Changes to red when muted */
+    border-color: #d9534f;
+}
+
+
 #progress{
     position: fixed;
     top:0;
@@ -130,7 +156,7 @@ main p{
     height:300px;
     width:500px;
     opacity: 100%;
-    
+
 }
 
 #Uddannelse{
